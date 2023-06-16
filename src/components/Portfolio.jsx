@@ -16,13 +16,13 @@ const Portfolio = () => {
     {
       id: 2,
       src: CryptoAPI,
-      href: 'https://github.com/JamesAnthony77/crypto-app',
+      href: 'https://cryptoexchangeapi.netlify.app/',
       text: 'Crypto Exchange API',
     },
     {
       id: 3,
       src: StarSite1,
-      href: 'https://github.com/JamesAnthony77/star-site',
+      href: 'https://interstellartravel.netlify.app/',
       text: 'Space Exploration Landing Page',
     },
     {

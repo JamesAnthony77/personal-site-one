@@ -98,7 +98,7 @@ const About = () => {
       </div>
 
       <div
-        className="absolute inset-0 bg-auto bg-center transition-opacity duration-1000 ease-in-out"
+        className="absolute inset-0 bg-auto bg-center transition-opacity duration-4000 ease-in-out"
         style={{
           backgroundImage: `url(${IndigoFlowerTrans})`,
           opacity: opacity,

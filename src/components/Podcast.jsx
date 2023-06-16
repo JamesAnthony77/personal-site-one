@@ -4,8 +4,8 @@ import PodcastEmbed from './PodcastEmbed';
 const Podcast = () => {
   return (
     <div
-      name="portfolio"
-      className="w-full text-white md:h-screen bg-myCustomBackgroundColor"
+      name="podcast"
+      className="w-full text-white bg-myCustomBackgroundColor"
     >
       <div>
         <PodcastEmbed />
