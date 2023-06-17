@@ -17,11 +17,12 @@ const SkillTree = () => {
           </Fade>
         </div>
 
-        <div>
+        <div className="mx-auto w-2/3 md:w-4/5 max-w-full">
           <img
             src={SkillTree3}
             alt="Map of skills"
-            className="mx-auto w-2/3 md:w-4/5 rounded-lg drop-shadow-lg shadow-lg shadow-blue-300"
+            className="rounded-lg drop-shadow-lg shadow-lg shadow-blue-300"
+            style={{ width: '100%', height: 'auto' }}
           />
         </div>
       </div>
