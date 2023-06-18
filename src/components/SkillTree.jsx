@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
-import SkillTree4 from '../assets/images/SkillTree4.png';
+import SkillTree8 from '../assets/images/SkillTree8.png';
 
 const SkillTree = () => {
   return (
@@ -19,7 +19,7 @@ const SkillTree = () => {
 
         <div className="mx-auto w-2/3 md:w-4/5 max-w-full">
           <img
-            src={SkillTree4}
+            src={SkillTree8}
             alt="Map of skills"
             className="rounded-lg drop-shadow-lg shadow-lg shadow-blue-300"
             style={{ width: '100%', height: 'auto' }}
