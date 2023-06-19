@@ -17,3 +17,12 @@
 .custom-rotate-270 {
   transform: rotate(270deg);
 }
+
+.github-link,
+.linkedin-link {
+  border-color: var(--color-indigo-400) !important;
+}
+
+.border-indigo-400 {
+  border-color: #6366f1;
+}
