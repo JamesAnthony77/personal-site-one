@@ -17,7 +17,7 @@ const SkillTree = () => {
           </Fade>
         </div>
 
-        <div className="mx-auto w-2/3 md:w-4/5 max-w-full">
+        <div className="mx-auto w-full sm:w-4/5 md:w-2/3 max-w-full">
           <img
             src={SkillTree8}
             alt="Map of skills"
