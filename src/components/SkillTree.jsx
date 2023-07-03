@@ -21,7 +21,7 @@ const SkillTree = () => {
           <img
             src={SkillTree8}
             alt="Map of skills"
-            className="rounded-lg drop-shadow-lg shadow-lg shadow-blue-300 duration-100 hover:scale-105"
+            className="rounded-lg shadow-lg shadow-blue-300 duration-100 hover:scale-105"
             style={{ width: '100%', height: 'auto' }}
           />
         </div>
