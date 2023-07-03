@@ -11,7 +11,7 @@ const Home = () => {
       className="h-screen w-full bg-gradient-to-b from-black to-myCustomBackgroundColor"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center md:flex-row h-full">
-        <div className="flex flex-col justify-center md:mr-8">
+        <div className="flex flex-col justify-center md:mr-8 px-4">
           <h2 className="text-4xl sm:text-7xl font-bold text-white [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]">
             dream transfusion
           </h2>

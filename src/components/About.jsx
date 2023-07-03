@@ -1,44 +1,45 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import IndigoFlowerTrans from '../assets/images/IndigoFlowerTrans.png';
+//import { useState, useEffect } from 'react';
+//import IndigoFlowerTrans from '../assets/images/IndigoFlowerTrans.png';
 import { Fade } from 'react-awesome-reveal';
 
+//Hook for flower image opacity trigger upon initial loading of screen
 const About = () => {
-  const [opacity, setOpacity] = useState(0.9);
+  //   const [opacity, setOpacity] = useState(0.9);
 
-  useEffect(() => {
-    const hasTransitionOccurred = localStorage.getItem('transitionOccurred');
+  //   useEffect(() => {
+  //     const hasTransitionOccurred = localStorage.getItem('transitionOccurred');
 
-    if (!hasTransitionOccurred) {
-      const handleScroll = () => {
-        if (window.scrollY > 0) {
-          setOpacity(0.1);
-          localStorage.setItem('transitionOccurred', 'true');
-          window.removeEventListener('scroll', handleScroll);
-        }
-      };
+  //     if (!hasTransitionOccurred) {
+  //       const handleScroll = () => {
+  //         if (window.scrollY > 0) {
+  //           setOpacity(0.1);
+  //           localStorage.setItem('transitionOccurred', 'true');
+  //           window.removeEventListener('scroll', handleScroll);
+  //         }
+  //       };
 
-      window.addEventListener('scroll', handleScroll);
+  //       window.addEventListener('scroll', handleScroll);
 
-      const handleBeforeUnload = () => {
-        localStorage.removeItem('transitionOccurred');
-      };
+  //       const handleBeforeUnload = () => {
+  //         localStorage.removeItem('transitionOccurred');
+  //       };
 
-      window.addEventListener('beforeunload', handleBeforeUnload);
+  //       window.addEventListener('beforeunload', handleBeforeUnload);
 
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-        window.removeEventListener('beforeunload', handleBeforeUnload);
-      };
-    } else {
-      setOpacity(0.1);
-    }
-  }, []);
+  //       return () => {
+  //         window.removeEventListener('scroll', handleScroll);
+  //         window.removeEventListener('beforeunload', handleBeforeUnload);
+  //       };
+  //     } else {
+  //       setOpacity(0.1);
+  //     }
+  //   }, []);
 
   return (
     <div
       name="about"
-      className="w-full h-screen bg-myCustomBackgroundColor text-white relative"
+      className="w-full h-300 bg-myCustomBackgroundColor text-white relative"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full relative z-10">
         <div className="pb-8">
@@ -85,7 +86,7 @@ const About = () => {
 
         <br />
 
-        <p className="text-xl [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]">
+        <p className="text-xl mb-40 [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]">
           But beyond that you can find me hiking, reading, and hanging out with
           friends.
         </p>
@@ -97,13 +98,13 @@ const About = () => {
         /> */}
       </div>
 
-      <div
-        className="absolute inset-0 bg-auto bg-center transition-opacity duration-4000 ease-in-out"
+      {/* <div
+        className="absolute inset-0 bg-no-repeat bg-center transition-opacity duration-4000 ease-in-out"
         style={{
           backgroundImage: `url(${IndigoFlowerTrans})`,
           opacity: opacity,
         }}
-      ></div>
+      ></div> */}
     </div>
   );
 };
